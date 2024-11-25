@@ -6,6 +6,7 @@ int findMissingTerm(int arr[], int n) {
     
     while (low <= high) {
         int mid = low + (high - low) / 2;
+        int expected = arr[0] + mid * d;
         if (arr[mid] == expected)
             low = mid + 1;
         else {
